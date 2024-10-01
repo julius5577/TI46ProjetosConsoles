@@ -12,7 +12,7 @@ namespace TI46ProjetosConsole
         static void Main(string[] args)
         {
             string Nome;
-            decimal nota1,nota2,nota3,nota4;
+            decimal nota1, nota2, nota3, nota4, resultado;
 
             Console.WriteLine("digite seu nome: ");
 
@@ -26,6 +26,10 @@ namespace TI46ProjetosConsole
             nota2 = decimal.Parse(Console.ReadLine());
             nota3 = decimal.Parse(Console.ReadLine());
             nota4 = decimal.Parse(Console.ReadLine());
+
+            resultado = (nota1 + nota2 + nota3 + nota4) / 4;
+
+            Console.WriteLine("a media é" +resultado);
 
 
 
